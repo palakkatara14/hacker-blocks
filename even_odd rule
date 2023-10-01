@@ -1,0 +1,40 @@
+import java.util.*;
+public class Main {
+    public static void main(String args[]) {
+         Scanner sc=new Scanner(System.in);
+		 int n=sc.nextInt();
+		 for(int i=0;i<n;i++){
+		 int N=sc.nextInt();
+		 int se=0,so=0;
+		 
+		 int r;
+		 
+		 while(N>0){
+			 
+			 r=N%10;
+			 if(r%2==0){
+				 se=se+r;
+			 }
+			 else{
+				 so=so+r;
+			 }
+			 N/=10;
+
+
+		 
+		}
+		if(se%4==0||so%3==0){
+			System.out.println("Yes");
+		}
+		else{
+			System.out.println("No");
+		}
+
+		 }
+
+
+	
+    
+	}
+
+}
