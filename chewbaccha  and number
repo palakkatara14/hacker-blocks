@@ -1,0 +1,26 @@
+import java.util.*;
+public class Main {
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+		long x=sc.nextLong();
+		long re=0,mul=1;
+		while(x>0){
+			long r=x%10;
+			if((r>=5)&&(x!=9)){
+				long digit=9-r;
+				re=re+mul*digit;
+		}
+			else{
+				re=re+mul*r;
+				}
+
+				mul*=10;
+				x/=10;
+			
+		}
+		System.out.println(re);
+
+
+	}
+
+}
